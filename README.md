@@ -4,7 +4,8 @@
 ## Objetivo
 
   ```bash
- Concretar un proyecto aplicando los conocimientos impartidos a lo largo del curso, con la finalidad de agregarlo a sus portfolios personales.
+   Concretar un proyecto aplicando los conocimientos impartidos a lo largo del curso, 
+   con la finalidad de agregarlo a sus portfolios personales.
   ```
 
 ## Enunciado
