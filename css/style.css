@@ -47,6 +47,12 @@ nav a {
     align-items: center;
     flex-direction: column;
 }
+#carrusel{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 #alquilar{
     display: flex;
     align-items: center;
