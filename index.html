@@ -30,46 +30,70 @@
         </button>
     </header>
     <main>
-	    <!-- <section id="empresa">
-	        <h1>Empresa</h1>
-	        <p>Contenido de la sección Empresa</p>
-	    </section> -->	    
-	    <!-- <section id="personal">
-	        <h1>Personal</h1>
-	        <p>Contenido de la sección Personal</p>
-	    </section> -->
+	    <section id="empresa">
+        <h1>Empresa</h1>
+        <p>Contenido de la sección Empresa</p>
+      </section> 
         <div class="bicis">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/images/bicis/1_Plegable.jpg" class="w-50" alt="bici1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/bicis/1_Starter.jpg" class="w-50" alt="bici2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/bicis/BIC5261SIA.jpg" class="w-50" alt="bici3">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>	    
+          <div id="carouselExampleCaptions" class="carousel slide text-bg-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators" id="carousel-indicators">              
+            </div>
+            <div class="carousel-inner" id="carousel-inner">              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <section id="alquilar">
+          <h2>Alquila tu Bici</h2>
+          <form id="formulario">
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div>
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9+-]+" required>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="bicicleta">Elige tu Bicicleta:</label>
+              <select id="bicicleta" name="bicicleta" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Bicicleta de Montaña">Bicicleta de Montaña</option>
+                <option value="Bicicleta de Ruta">Bicicleta de Ruta</option>
+                <option value="Bicicleta Híbrida">Bicicleta Híbrida</option>
+                <option value="Bicicleta Urbana">Bicicleta Urbana</option>
+              </select>
+            </div>
+            <div>
+              <label for="costo">Costo:</label>
+              <input type="number" id="costo" name="costo" required>
+            </div>
+            <button type="submit" id="boton-enviar">Enviar</button>
+          </form>
+        </section>
+        <section id="personal">
+          <h1>Personal</h1>
+          <p>Contenido de la sección Personal</p>
+        </section> 	    
 	</main>
     <footer>
         <p></p>
     </footer>
-    <script src="./scripts/js.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "marca": "Venzo",
+        "modelo": "Frida",
+        "rodado": 29,
+        "precio": 15,
+        "imagen": "./assets/images/bicis/VenzoFrida.jpg"
+    },
+    {
+        "id": 2,
+        "marca": "Volkswagen",
+        "modelo": "highline",
+        "rodado": 29,
+        "precio": 15,
+        "imagen": "./assets/images/bicis/VolkswagenHighkube.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "Benelli",
+        "modelo": "RaceKing",
+        "rodado": 29,
+        "precio": 15,
+        "imagen": "./assets/images/bicis/BenelliRaceKing.jpg"
+    }
+]
