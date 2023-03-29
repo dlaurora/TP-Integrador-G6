@@ -2,5 +2,21 @@
     {
         "nombre": "Gonzalo Gonzalez",
         "github": "https://github.com/gg161087"
+    },
+    {
+        "nombre": "Diego Laurora",
+        "github": "https://github.com/dlaurora/"
+    },
+    {
+        "nombre": "Jose Federico Salerno",
+        "github": "https://github.com/Federico-Salerno"
+    },
+    {
+        "nombre": "Carlos Paolo Sella",
+        "github": "https://github.com/PaoloSella"
+    },
+    {
+        "nombre": "Marcos Zabala",
+        "github": "https://github.com/zabala1986"
     }
 ]

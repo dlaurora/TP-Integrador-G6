@@ -22,5 +22,21 @@
         "rodado": 29,
         "precio": 15,
         "imagen": "./assets/images/bicis/BenelliRaceKing.jpg"
-    }
+    },
+    {
+        "id": 4,
+        "marca": "Volkswagen",
+        "modelo": "Urbana",
+        "rodado": 16,
+        "precio": 10,
+        "imagen": "./assets/images/bicis/1_Plegable.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Smart",
+        "modelo": "Hibrida",
+        "rodado": 21,
+        "precio": 20,
+        "imagen": "./assets/images/bicis/hibrida.jpg"
+    }    
 ]

@@ -1,6 +1,3 @@
-const divCarruselIndicatorsBicis = document.getElementById('carouselExampleCaptions');
-const divCarruselBtnsBicis = document.getElementById('carousel-indicators');
-const divCarouselInnerBicis = document.getElementById('carousel-inner');
 const form = document.getElementById("formulario");
 
 function enviarFormulario() {

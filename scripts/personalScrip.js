@@ -5,9 +5,11 @@ fetch('./database/personal.json')
     .then(data => {
         for(element of data){
             divEmpleados.innerHTML += `
-            <div class="card">
-                <p>Nombre: ${element.nombre}</p>
-                <a href="${element.github}">GitHub</a>
+            <div class="card-row">
+                <div class="card">
+                    <p>Nombre: ${element.nombre}</p>
+                    <a href="${element.github}">GitHub</a>
+                </div>
             </div>
             `
         }

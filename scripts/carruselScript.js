@@ -1,42 +1,35 @@
-const indicador = document.getElementById('carousel-indicators');
-const inner = document.getElementById('carousel-inner');
+const divCarruselIndicatorsBicis = document.getElementById('carouselExampleCaptions');
+const divCarruselBtnsBicis = document.getElementById('carousel-indicators');
+const divCarouselInnerBicis = document.getElementById('carousel-inner');
+const form = document.getElementById("formulario");
 
-let indice = 0;
 
-fetch('./database/bicicletas.json')
-    .then(res => res.json())
-    .then(data => {
-        for(product of data){
-            console.log(product.marca);
-            if(indice == 0){
-                indicador.innerHTML += `
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${indice}" class="active" aria-current="true" aria-label="Slide ${indice + 1}"></button>
-                `
-                inner.innerHTML += `      
-                    <div class="carousel-item active">
-                        <img src="${product.imagen}" class="d-block w-100" alt="${product.marca}">
-                        <br>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-dark">${product.marca} ${product.modelo}</h5>
-                            <p class="text-dark">Precio por dia: $${product.precio}</p>
-                        </div>
-                    </div>
-                `            
-            }else{
-                indicador.innerHTML += `
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${indice}" aria-label="Slide ${indice + 1}"></button>
-                `
-                inner.innerHTML += `      
-                    <div class="carousel-item">
-                        <img src="${product.imagen}" class="d-block w-100" alt="${product.marca}">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-dark">${product.marca} ${product.modelo}</h5>
-                            <p class="text-dark">Precio por dia: $${product.precio}</p>
-                        </div>
-                    </div>
-                ` 
-            }
-            indice++ 
-            
-        }
-    })
+
+    fetch('./database/bicicletas.json')
+  .then(response => response.json())
+  .then(data => {
+    // Iterar sobre los datos y crear los elementos del carrusel
+    data.forEach((element, index) => {
+      const isActive = index === 0 ? 'active' : '';
+      carouselIndicators.innerHTML += `
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}" class="${isActive}" aria-current="true"></button>
+      `;
+      carouselInner.innerHTML += `
+        <div class="carousel-item ${isActive}">
+          <img src="${element.imagen}" class="d-block w-100" alt="${element.titulo}">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>${element.marca}</h5>
+            <p>${element.modelo}</p>
+            <p>${element.precio} USD el dia</p>
+          </div>
+        </div>
+      `;
+    });
+
+    // Inicializar el carrusel de Bootstrap
+    const carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'), {
+      interval: 5000, // tiempo de transición entre imágenes en ms
+      pause: 'hover', // pausa la transición cuando el usuario coloca el mouse sobre el carrusel
+    });
+  })
+  .catch(error => console.error(error));
