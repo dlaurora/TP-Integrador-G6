@@ -2,7 +2,7 @@
     {
         "id": 1,
         "marca": "Venzo",
-        "modelo": "Frida",
+        "modelo": "Bicicleta montaña",
         "rodado": 29,
         "precio": 15,
         "imagen": "./assets/images/bicis/VenzoFrida.jpg"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "marca": "Volkswagen",
-        "modelo": "highline",
+        "modelo": "Bicicleta montaña",
         "rodado": 29,
         "precio": 15,
         "imagen": "./assets/images/bicis/VolkswagenHighkube.jpg"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "marca": "Benelli",
-        "modelo": "RaceKing",
+        "modelo": "Bicicleta montaña",
         "rodado": 29,
         "precio": 15,
         "imagen": "./assets/images/bicis/BenelliRaceKing.jpg"
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "marca": "Volkswagen",
-        "modelo": "Urbana",
+        "modelo": "Bicicleta urbana",
         "rodado": 16,
         "precio": 10,
         "imagen": "./assets/images/bicis/1_Plegable.jpg"
@@ -34,9 +34,18 @@
     {
         "id": 5,
         "marca": "Smart",
-        "modelo": "Hibrida",
+        "modelo": "Bicicleta hibrida",
         "rodado": 21,
         "precio": 20,
         "imagen": "./assets/images/bicis/hibrida.jpg"
+    },
+    {
+        "id": 6,
+        "marca": "Scott",
+        "modelo": "Bicicleta infantiles",
+        "rodado": "infantil",
+        "precio": 10,
+        "imagen": "./assets/images/bicis/niños.jpg"
     }    
+
 ]

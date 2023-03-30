@@ -1,0 +1,18 @@
+[
+    {
+        "modelo": "montaña",
+        "precio": "15 USD"
+    },
+    {
+        "modelo": "urbana",
+        "precio": "10 USD"
+    },
+    {
+       "modelo": "hibrida",
+        "precio": "20 USD"
+    },
+    {
+        "modelo": "chicos",
+        "precio": "10 USD"
+    }
+]
