@@ -6,7 +6,11 @@ let currentIndex = 0;
 const showImage = () => {
     carouselImages.innerHTML = `
         <img src="${images[currentIndex].imagen}" alt="${images[currentIndex].modelo}">
-        <div class="caption">${images[currentIndex].modelo} - ${images[currentIndex].precio}</div>
+        <div class="caption">
+            <p>${images[currentIndex].marca}</p>
+            <p>${images[currentIndex].modelo}</p>
+            <p>${images[currentIndex].precio}</p>
+        </div>
     `;
 }
 
