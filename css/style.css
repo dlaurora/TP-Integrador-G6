@@ -199,6 +199,16 @@ nav a:hover {
   .form-step {
     animation: fade-in 0.5s ease-in-out;
   }
+
+  #form-wizard .form-step p {
+    margin-bottom: 20px;
+  }
+
+  #form-step .h2{
+ 
+    margin-bottom: 10px;
+
+  }
   
   @keyframes fade-in {
     from {
