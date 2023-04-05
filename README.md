@@ -86,5 +86,3 @@ Desarrollar una landing page para una organización/emprendimiento/empresa
 * JOSE FEDERICO SALERNO
 
 * CARLOS PAOLO SELLA
-
-* MARCOS ZABAL
