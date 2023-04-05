@@ -4,9 +4,9 @@
 
 :root {
   --font: 'League Spartan', sans-serif;
-  --clr-1: rgb(235, 235, 235);
+  --clr-1: rgb(242,242,242);
   --clr-2: rgb(34, 40, 49);
-  --clr-3: rgb(255,175,58);
+  --clr-3: rgb(242, 158, 56);
 }
 
 *{
@@ -15,6 +15,7 @@
   box-sizing: border-box;
   font-family: var(--font);
 }
+
 body{
   background-color: var(--clr-1);
   height: 100%;       
@@ -22,20 +23,26 @@ body{
 
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 50px;
   padding: 50px 0;
   width: 100%;
-  background-color: var(--clr-2);
+  background-color: var(--clr-1);
   height: 66px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 header img {
-  margin-left: 30px;
-  width:200px;
+  margin-left: 80px;
+  width:170px;
   padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 nav {
@@ -47,9 +54,9 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--clr-1);
-  margin-left: 30px;
-  padding-right: 30px;
+  color: var(--clr-2);
+  margin-left: 4px;
+  padding-right: 60px;
   font-size: 20px;
   font-weight: 500;
   transition-property: color;
@@ -98,6 +105,67 @@ nav a:hover {
   width: 100%;
   border-radius: 5px;
 }
+/* sección Banner */
+.hero{
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 5vw;
+  align-items: center;
+
+}
+.hero img{
+  margin-right: 3vw;
+  width: 33vw;
+  margin-left: 19vw;
+  }
+
+.hero .hero-title h1{
+  font-size: 62px;
+  margin-bottom: 20px;
+  font-family: 'Mitr';
+  color: var(--clr-2);
+  text-align: right;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.h1Naranja{
+  font-family: var(--font);
+  color: var(--clr-3);
+  font-size: 93px;
+  margin-right: -120px;
+  text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.hero .hero-title p{
+  font-size: 21px;
+  font-family: var(--font);   
+  margin-left: 140px;
+  margin-top: 0vw;  
+  margin-bottom: 0vw;
+  padding-left: 0vw;
+  color:var(--clr-2);
+  text-align: right;
+}
+
+.BotonPresupuesta{
+  margin-left: 25vw;
+  margin-top: 1vw;
+  padding: 1vw;
+  font-size: 20px;
+  font-family: var(--font);
+  color: var(--clr-2);
+  background-color: var(--clr-3);
+  border-radius: 4px;
+  }
+
+  .BotonPresupuesta:hover {
+  background-color:var(--clr-1);
+  box-shadow: ;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
 
 /* Seccion Carousel */
 #carousel-container {
