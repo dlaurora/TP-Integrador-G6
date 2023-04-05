@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- estos son los links del css -->
     <link rel="stylesheet" href="./css/style.css">
-
     <!-- estos son los links del css -->
     <title>Rueda Libre</title>
 </head>
@@ -17,9 +16,9 @@
         <img src="./assets/images/logo2-removebg-preview.png" alt="logo1">
         <nav>            
             <a href="#empresa">Empresa</a>
-            <a href="#alquilar">Alquila tu Bici</a>
+            <a href="#alquilar">Alquilá tu Bici</a>
             <a href="#personal">Personal</a>
-            <a href="#contactanos">Contactanos</a>
+            <a href="#contáctanos">Contáctanos</a>
         </nav>  
     </header>
     <main>
@@ -51,11 +50,11 @@
         <form id="form-wizard">
           <!-- Paso 1 -->
           <div class="form-step">
-            <h2> Detalles</h2>
-            <p>Completa los siguientes datos, nos ayudará a seleccionar la mejor bici para tu experiencia.</p>
+            <h2> Alquila tu bici.</h2>
+            <p>Completando la siguiente información nos ayudará a seleccionar la mejor bici para tu experiencia.</p>
             <label for="bicicleta">Bicicleta:</label>
             <select id="bicicleta" name="bicicleta" required>
-              <option value="">- Selecciona una bici -</option>
+              <option value="">- Seleccioná una bici -</option>
               <option value="montaña">Bicicletas de montaña</option>
               <option value="urbana">Bicicletas urbanas</option>
               <option value="hibrida">Bicicletas eléctricas</option>
@@ -64,7 +63,7 @@
             <br>
             <label for="rodado">Rodado:</label>
             <select id="rodado" name="rodado" required>
-              <option value="">- Selecciona un rodado -</option>
+              <option value="">- Seleccioná un rodado -</option>
               <option value="26">infantiles</option>
               <option value="26">16"</option>
               <option value="26">20"</option>
@@ -76,7 +75,7 @@
             <br>
             <label for="edad">Edad:</label>
             <select id="edad" name="edad" required>
-              <option value=""> - Selecciona tu rango de edad -</option>
+              <option value=""> - Seleccioná tu rango de edad -</option>
               <option value="nino">1-5 años (82/100cm)</option>
               <option value="adolescente">4-6 años (105/120cm)</option>
               <option value="adulto">6-8 años (115/130cm)</option>
@@ -110,7 +109,7 @@
             <h2>Información adicional</h2>
             <label for="informacion">Información adicional:</label>
             <textarea id="informacion" name="informacion"></textarea>
-            <span>Agregue aquí información adicional acerca de su pedido, o cualqueir otro comentario que nos quira hacer.</span>
+            <span>Agregue aquí información adicional acerca de su pedido.</span>
           </div>
         
           <!-- Botones -->
@@ -127,9 +126,17 @@
               
         </div>
       </section>
-      <section id="contactenos">
-        <div id="contactenos">
-          <h1>Contactenos</h1>          
+      <section id="contáctanos">
+        <div class="formulario">
+          <h1>Contáctanos</h1>
+          <p>Un asesor se pondra en contacto con vos para despejar todas tus dudas. </p>
+          <form action="#" method="post" id="formulario">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="Telefono" placeholder="Telefono">
+            <input type="email" name="correo" placeholder="Correo electrónico">
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+          </form>
         </div>
       </section>
     </main>
@@ -162,7 +169,7 @@
         </div>
     </div> 
  </footer> 
-    
+    <script src="./scripts/formcontacto.js"></script>
     <script src="./scripts/carruselScript.js"></script>
     <script src="./scripts/personalScrip.js"></script>
     <script src="./scripts/formwiz.js"></script>
