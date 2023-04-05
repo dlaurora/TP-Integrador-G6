@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@600&display=swap');
 
 :root {
-  --font: 'League Spartan', sans-serif;
+  --font: 'Mitr', normal ;
   --clr-1: rgb(242,242,242);
   --clr-2: rgb(34, 40, 49);
   --clr-3: rgb(242, 158, 56);
+  --clr-4: rgb(199, 199, 199);
 }
 
 *{
@@ -32,15 +33,15 @@ header {
   margin-right: 50px;
   padding: 50px 0;
   width: 100%;
-  background-color: var(--clr-1);
+  background-color: var(--clr-);
   height: 66px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--clr-4);
 }
 
 
 header img {
   margin-left: 80px;
-  width:170px;
+  width:250px;
   padding-bottom: 10px;
   padding-top: 5px;
 }
@@ -94,20 +95,21 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .card{
-  background-color: rgb(35, 35, 35);
+  background-color: var(--clr-2);
   padding: 10px;
   border-radius: 5px;
   width: 300px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  color: white
+  box-shadow: 0 0 5px var(--clr-2);
+  color: var(--clr-1)
 }
 .card img{
   width: 100%;
   border-radius: 5px;
 }
+
 /* sección Banner */
 .hero{
-  background-color: #F2F2F2;
+  background-color: var(--clr-1);
   display: flex;
   justify-content: space-between;
   padding: 3vh 5vw;
@@ -157,14 +159,14 @@ nav a:hover {
   font-family: var(--font);
   color: var(--clr-2);
   background-color: var(--clr-3);
+  transition: all 0.3s ease;
   border-radius: 4px;
   }
 
   .BotonPresupuesta:hover {
   background-color:var(--clr-1);
-  box-shadow: ;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px var(--clr-2);
   }
 
 /* Seccion Carousel */
@@ -175,7 +177,7 @@ nav a:hover {
   height: 500px;
   overflow: hidden;
   margin: 30px auto 50px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px var(--clr-2);
 }
 
 @media (min-width: 768px) {
@@ -195,6 +197,7 @@ nav a:hover {
   display: flex;
   transition: transform 0.5s ease;
   animation: carouselAnimation 10s infinite linear;
+  background-color: var(--clr-4);
 }
 
 #carousel-images img {
@@ -204,17 +207,15 @@ nav a:hover {
 
 }
 
-
 #carousel-images .caption {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: var(--clr-2);
   font-size: 20px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 4px var(--clr-1);
+  background-color: var(--clr-4);
   padding: 5px 10px;
 }
 
@@ -225,26 +226,26 @@ nav a:hover {
   bottom: 10px;
   width: 100%;
   text-align: center;
-  border-spacing: 10px;
+  border-spacing: 15px;
 }
 
 
 #carousel-controls button {
   margin: 1px 125px ;
   padding: 10px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--clr-2);
+  color: var(--clr-1);
   border: none;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px var(--clr-2);
   
 }
 
 #carousel-controls button:hover {
-  background-color: #ec7a00;
+  background-color: var(--clr-3);
 }
 
 /* Seccion form wizzard */
@@ -255,8 +256,8 @@ nav a:hover {
     margin: 0 auto;
     margin-bottom: 50px;
     padding: 20px;
-    background-color: rgba(131, 126, 126, 0.423);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--clr-4);
+    box-shadow: 2px 2px 5px var(--clr-2);
     border-radius: 10px;
   }
   
@@ -312,7 +313,7 @@ nav a:hover {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--clr-1);
     font-size: 16px;
   }
   
@@ -326,8 +327,8 @@ nav a:hover {
   .prev-button,
   .next-button,
   .submit-button {
-    background-color: #333;
-    color: #ffffff;
+    background-color: var(--clr-2);
+    color: var(--clr-1);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -339,7 +340,7 @@ nav a:hover {
   .prev-button:hover,
   .next-button:hover,
   .submit-button:hover {
-    background-color: #ec7a00;
+    background-color: var(--clr-3);
   }
   
   /* Transición entre los pasos */
@@ -360,12 +361,12 @@ nav a:hover {
   }
 
   label[for="precio"] {
-    color: rgb(0, 0, 0);
+    color: var(--clr-2);
     font-weight: bold;
   }
   
   #precio {
-    color: rgb(0, 0, 0);
+    color: var(--clr-2);
     font-weight: bold;
     font-size: 20px;
   }  
@@ -386,9 +387,9 @@ nav a:hover {
 .card {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--clr-4);
   border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px var(--clr-2);
   flex-grow: 1;
   max-width: calc(90% - 20px);
 }
@@ -400,9 +401,9 @@ nav a:hover {
   padding: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: rgba(131, 126, 126, 0.423);
+  background-color: var(--clr-4);
   border-radius: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px var(--clr-2);
 }
 
 h1 {
@@ -428,7 +429,7 @@ form textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: whitesmoke;
+  background-color: var(--clr-1);
 }
 
 form input[type="submit"] {
@@ -436,13 +437,13 @@ form input[type="submit"] {
   margin-top: 30px;
   width: 30%;
   background-color:#333;
-  color: whitesmoke;
+  color: var(--clr-1);
   cursor: pointer;
   border: none;
 }
 
 form input[type="submit"]:hover {
-  background-color: #ec7a00;
+  background-color: var(--clr-3);
   transition: all 0.3s ease-in-out
 }
 
@@ -454,7 +455,7 @@ form input[type="submit"]:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--clr-1);
   border: 1px solid #ccc;
   text-align: center;
 }
@@ -526,7 +527,7 @@ footer p {
 
 .column h3 {
   font-size: 20px;
-  color: whitesmoke;    
+  color: var(--clr-1);    
   font-weight:bold;
   padding: 10px;
   text-align: left;
@@ -566,6 +567,7 @@ h3 {
   } 
 
 }
+
 .footer-contacto,
 .footer-legales,
 .footer-rrss {
@@ -576,7 +578,7 @@ h3 {
     width: 100%;
     height: 200px; 
     background-color: transparent;
-    color: #fff; 
+    color: var(--clr-1); 
     display: flex;
   }
   .columna1 {
@@ -602,7 +604,7 @@ h3 {
   .columna2 h1 {
     font-size: 60px; /* Cambia este valor para ajustar el tamaño del título */
     margin-bottom: 0.2em;
-      color:rgba(255,180,58,255);
+    color:rgba(255,180,58,255);
   }
   .columna2 p {
     font-size: 25px; /* Cambia este valor para ajustar el tamaño del texto */
