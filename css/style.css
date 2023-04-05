@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@600&display=swap');
 
 :root {
   --font: 'League Spartan', sans-serif;
@@ -24,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-right: 50px;
-  padding: 10px 0;
+  padding: 50px 0;
   width: 100%;
   background-color: var(--clr-2);
   height: 66px;
@@ -32,8 +34,8 @@ header {
 
 header img {
   margin-left: 30px;
-  width:250px;
-  padding-bottom: 25px;
+  width:200px;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -477,8 +479,7 @@ h3 {
 .column-logo img {
   width: 80%;
   max-width: 100%;
-  height: auto;
-  margin-top: -25px;
+  margin-top: 2rem;
 }
 
 .column:last-child {
