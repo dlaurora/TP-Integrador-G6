@@ -3,12 +3,14 @@ const divEmpleados = document.getElementById('empleados');
 fetch('./database/personal.json')
     .then(res => res.json())
     .then(data => {
-        for(element of data){
+        for(personal of data){
             divEmpleados.innerHTML += `
             <div class="card-row">
                 <div class="card">
-                    <p>Nombre: ${element.nombre}</p>
-                    <a href="${element.github}">GitHub</a>
+                    <p>Nombre: ${personal.nombre}</p>
+                    <p>Apellido: ${personal.apellido}</p>
+                    <p>Puesto: ${personal.puesto}</p>
+                    <p>Github: <a href="${personal.github}" target="_blank">Link</a></p>
                 </div>
             </div>
             `

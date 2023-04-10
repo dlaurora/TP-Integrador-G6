@@ -1,22 +1,32 @@
 [
     {
-        "nombre": "Gonzalo Gonzalez",
+        "nombre": "Gonzalo",
+        "apellido": "Gonzalez",
+        "puesto": "Administrativo", 
         "github": "https://github.com/gg161087"
     },
     {
-        "nombre": "Diego Laurora",
+        "nombre": "Diego",
+        "apellido": "Laurora",
+        "puesto": "Gerencia", 
         "github": "https://github.com/dlaurora/"
     },
     {
-        "nombre": "Jose Federico Salerno",
+        "nombre": "Jose Federico",
+        "apellido": "Salerno",
+        "puesto": "Ventas", 
         "github": "https://github.com/Federico-Salerno"
     },
     {
-        "nombre": "Carlos Paolo Sella",
+        "nombre": "Carlos Paolo",
+        "apellido": "Sella",
+        "puesto": "Comercial", 
         "github": "https://github.com/PaoloSella"
     },
     {
         "nombre": "Marcos Zabala",
+        "apellido": "Zabala",
+        "puesto": "Ventas",
         "github": "https://github.com/zabala1986"
     }
 ]
