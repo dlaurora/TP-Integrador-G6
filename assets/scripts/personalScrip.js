@@ -3,17 +3,15 @@ const divEmpleados = document.getElementById('empleados');
 fetch('./database/personal.json')
     .then(res => res.json())
     .then(data => {
-        for(personal of data){
+        for(element of data){
             divEmpleados.innerHTML += `
-            <div class="card-row">
-                <div class="card">
-                    <p>Nombre: ${personal.nombre}</p>
-                    <p>Apellido: ${personal.apellido}</p>
-                    <p>Puesto: ${personal.puesto}</p>
-                    <p>Github: <a href="${personal.github}" target="_blank">Link</a></p>
-                </div>
-            </div>
-            `
-        }
+            <div class="card">
+                <img class="imgCard" src="${element.imagen}" alt="Imgen de perfil de ${element.nombre}">
+                <span class="name">${element.nombre}</span>
+                <span class="job">${element.titulo}</span>
+                <p class="description">${element.descripcion}</p>
+            </div>             
+            `           
+        }        
     })
     .catch(error => console.log(error))

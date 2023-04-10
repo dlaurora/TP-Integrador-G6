@@ -336,42 +336,58 @@ label[for="precio"] {
 }  
 
 /* Sección Personal */
-#personal{
-    padding: 2vh 20vw;
+#empleados {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-#empleados{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-}
-.card-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(35, 35, 35);    
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    width: 300px;    
-    color: white;
-    max-width: calc(90% - 20px);
-}
-.card img{
+    justify-content: space-between;
     width: 100%;
-    border-radius: 5px;
+    padding: 3vh 5vw;
+    background-color: transparent;
 }
-.card-row {
+    
+.card{
+    width: 230px;
+    height: 350px;
+    padding: 20px;
+    background-color: var(--clr-4);
+    box-shadow: none;
     display: flex;
-    flex-direction: row;    
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+  
+.name{
+    color: var(--clr-2);
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+    
+  .job{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--clr-3);
+    text-align: center;
+  }
+    
+  .description{
+    color: var(--clr-2);
+    text-align: center;
+  }
+  
+  .card p{
+    height: 70px;
+    margin-top: 0;
+  }
+    
+  .card img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
   
 /* Sección Contactenos */
 .formulario {

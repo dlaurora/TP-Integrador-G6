@@ -1,32 +1,32 @@
 [
     {
-        "nombre": "Gonzalo",
-        "apellido": "Gonzalez",
-        "puesto": "Administrativo", 
-        "github": "https://github.com/gg161087"
+        "nombre": "Gonzalo Gonzalez",
+        "titulo": "Gerente",
+        "descripcion": "Encagado de liderar y supervisar al equipo de trabajo.",    
+        "imagen": "https://avatars.githubusercontent.com/u/107937050?v=4"   
     },
     {
-        "nombre": "Diego",
-        "apellido": "Laurora",
-        "puesto": "Gerencia", 
-        "github": "https://github.com/dlaurora/"
+        "nombre": "Diego Laurora",
+        "titulo": "Representante de servivio al cliente",
+        "descripcion": "Experiencia en el trato con el cliente o turista.",
+        "imagen": "https://avatars.githubusercontent.com/u/107487596?v=4"       
     },
     {
-        "nombre": "Jose Federico",
-        "apellido": "Salerno",
-        "puesto": "Ventas", 
-        "github": "https://github.com/Federico-Salerno"
+        "nombre": "Federico Salerno",
+        "titulo": "Técnico de mantenimiento",
+        "descripcion": "Mantenimiento de bicicletas para ofrecer la mejor seguridad.",
+        "imagen": "https://avatars.githubusercontent.com/u/114102486?v=4"      
     },
     {
-        "nombre": "Carlos Paolo",
-        "apellido": "Sella",
-        "puesto": "Comercial", 
-        "github": "https://github.com/PaoloSella"
+        "nombre": "Paolo Sella",
+        "titulo": "Especialista en marketing digital",
+        "descripcion": "Encargado en diseñar las estratégias de ventas.",
+        "imagen": "https://avatars.githubusercontent.com/u/127257339?v=4"        
     },
     {
         "nombre": "Marcos Zabala",
-        "apellido": "Zabala",
-        "puesto": "Ventas",
-        "github": "https://github.com/zabala1986"
+        "titulo": "Diseñador gráfico",
+        "descripcion": "Encargado de crear la mejor experiencia para el usuario.",
+        "imagen": "https://avatars.githubusercontent.com/u/128554028?v=4"
     }
 ]
