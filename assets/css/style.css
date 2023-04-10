@@ -73,8 +73,10 @@ nav a:hover {
 }
 #alquilar{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 /* sección Banner */
@@ -121,6 +123,7 @@ nav a:hover {
 }
 
 .BotonPresupuesta{
+    text-decoration: none;
     margin-left: 25vw;
     margin-top: 1vw;
     padding: 1vw;
@@ -150,7 +153,7 @@ nav a:hover {
 
 #carousel-images {
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
     top: 0;
     left: 0;
     width: 100%;
@@ -214,7 +217,7 @@ nav a:hover {
 #form-wizard {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2vw;
     margin-bottom: 50px;
     padding: 20px;
     background-color: rgba(131, 126, 126, 0.423);
