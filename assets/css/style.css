@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 5vw;
     padding: 50px 0;
     width: 100%;
     background-color: var(--clr-1);
@@ -37,26 +37,36 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 header img {
-    margin-left: 80px;
+    margin-left: 5vw;
     width:170px;
     padding-bottom: 10px;
     padding-top: 5px;
 }
 nav {
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;    
+    padding-right: 5vw;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
+    text-align: right;
 }
-nav a {
+nav a {    
     text-decoration: none;
     color: var(--clr-2);
     margin-left: 4px;
-    padding-right: 60px;
+    padding-left: 3rem;
     font-size: 20px;
     font-weight: 500;
     transition-property: color;
     transition-duration: 0.5s;
+    align-self: flex-end;    
 }
 nav a:hover {
     color: var(--clr-3);  
@@ -73,23 +83,24 @@ nav a:hover {
     align-items: center;
 }
 #alquilar{
+    height: 60vh;
+    margin: 0 5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
+    align-items: center;    
 }
 
 /* sección Banner */
 .hero{
+    width: 100%;
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
     padding: 3vh 5vw;
     align-items: center;
 }
-.hero img{
-    margin-right: 3vw;
+.hero img{    
     width: 33vw;
     margin-left: 19vw;
 }
@@ -110,7 +121,6 @@ nav a:hover {
     margin-right: -120px;
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
 
 .hero .hero-title p{
     font-size: 21px;
@@ -142,13 +152,17 @@ nav a:hover {
 }
 
 /* Seccion Carousel */
+#carrusel{
+    width: 100%;
+    height: 100%;
+}
 #carousel-container {
     position: relative;
     border-radius: 10px;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    margin: 30px auto 50px;
+    margin: 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -218,7 +232,7 @@ nav a:hover {
 #form-wizard {
     width: 100%;
     max-width: 600px;
-    margin: 2vw;
+    margin-left: 1vw;
     margin-bottom: 50px;
     padding: 20px;
     background-color: rgba(131, 126, 126, 0.423);
@@ -457,7 +471,8 @@ form input[type="submit"]:hover {
 }
 
 /* sección footer */
-footer {  
+footer { 
+    width: 100%; 
     background-color: rgb(56, 54, 54) ;
     padding: 2vh 5vw;
     font-size: 18px;
@@ -493,8 +508,23 @@ footer p {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media (max-width: 1024px) {
+    #personal{
+        display:"flex";
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    #empleados{
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #alquilar{
+        flex-direction: column;
+        height: auto;
+    }
     .footer-container {
     flex-direction: column;
     }
