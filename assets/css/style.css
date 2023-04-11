@@ -90,50 +90,69 @@ nav a:hover {
     justify-content: center;
     align-items: center;    
 }
-
 /* sección Banner */
 .hero{
     width: 100%;
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-between;
-    padding: 3vh 5vw;
+    justify-content: space-between;    
     align-items: center;
 }
-.hero img{    
-    width: 33vw;
-    margin-left: 19vw;
+.banner{
+    width: 100%;
+    margin: 3vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8vh;
 }
-
+.hero-title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+}
+.hero-img{
+    margin-left: 5vw;
+    width: 50%;
+    height: 100%; 
+}
+.sombra{
+    float:left;
+    background-color: var(--clr-3);
+    margin: 10px 0 0 5px;
+}
+.hero-img img {
+    display: block;
+    position: relative;
+    margin: 3rem 3rem -3rem -3rem;
+}
 .hero .hero-title h1{
-    font-size: 62px;
-    margin-bottom: 20px;
+    font-size: 62px;    
     font-family: 'Mitr';
     color: var(--clr-2);
     text-align: right;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
 .h1Naranja{
     font-family: var(--font);
     color: var(--clr-3);
-    font-size: 93px;
-    margin-right: -120px;
+    font-size: 93px;    
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
 .hero .hero-title p{
     font-size: 21px;
-    font-family: var(--font);   
-    margin-left: 140px;
+    font-family: var(--font);
     margin-top: 0vw;  
     margin-bottom: 0vw;
     padding-left: 0vw;
     color:var(--clr-2);
     text-align: right;
 }
-
 .BotonPresupuesta{
+    align-self: flex-end;
     text-decoration: none;
     margin-left: 25vw;
     margin-top: 1vw;
@@ -144,13 +163,11 @@ nav a:hover {
     background-color: var(--clr-3);
     border-radius: 4px;
 }
-
 .BotonPresupuesta:hover {
     background-color:var(--clr-1);  
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 /* Seccion Carousel */
 #carrusel{
     width: 100%;

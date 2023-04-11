@@ -1,4 +1,4 @@
-const carouselImages = document.querySelector("#carousel-images");
+const carouselImages = document.querySelector('#carousel-images');
 const images = []
 
 let currentIndex = 0;
@@ -28,8 +28,7 @@ const prevImage = () => {
         currentIndex = images.length - 1;
     }
     showImage();
-    }
-
+}
 
 fetch('./database/bicicletas.json')
     .then(res => res.json())
@@ -38,7 +37,7 @@ fetch('./database/bicicletas.json')
             images.push(i);
         }
         showImage();
-    document.querySelector("#prevBtn").addEventListener("click", prevImage);
-    document.querySelector("#nextBtn").addEventListener("click", nextImage);
+    document.querySelector('#prevBtn').addEventListener('click', prevImage);
+    document.querySelector('#nextBtn').addEventListener('click', nextImage);
     })
     .catch(error => console.error(error));
