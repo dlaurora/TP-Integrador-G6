@@ -7,6 +7,7 @@
     --clr-1: rgb(242,242,242);
     --clr-2: rgb(34, 40, 49);
     --clr-3: rgb(242, 158, 56);
+    --clr-4: rgba(131, 126, 126, 0.423);
 }
 
 *{
@@ -341,15 +342,15 @@ label[for="precio"] {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 3vh 5vw;
+    padding: 3vh 5vw;    
     background-color: transparent;
 }
     
 .card{
     width: 230px;
-    height: 350px;
+    height: 390px;
     padding: 20px;
-    background-color: var(--clr-4);
+    background-color: rgb(238, 229, 229);
     box-shadow: none;
     display: flex;
     flex-direction: column;
