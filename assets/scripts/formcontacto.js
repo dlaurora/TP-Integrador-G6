@@ -10,12 +10,12 @@ btnEnviar.addEventListener('click', function(event) {
             var nombre = formulario.querySelector('input[name="nombre"]');
             var mensaje = formulario.querySelector('textarea[name="mensaje"]');
       if (!nombre.value || !mensaje.value) {
-            alert('Por favor complete los campos requeridos');
+            swal('Por favor complete los campos requeridos', '', 'warning');
             return;
       }
 
       // Mostrar ventana emergente con el mensaje de éxito
-      alert('Su consulta fue enviada correctamente. Un representante se pondrá en contacto a la brevedad.');
+      swal('¡Consulta enviada!', 'Su consulta fue enviada correctamente. Un representante se pondrá en contacto a la brevedad.', 'success');
 
       // Limpiar los campos del formulario
       formulario.reset();

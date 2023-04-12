@@ -23,7 +23,7 @@ function nextStep() {
 
   // Mostrar alerta si los campos requeridos no están completos
   if (!valid) {
-    alert('Por favor complete todos los campos requeridos');
+    swal('Por favor complete los campos requeridos', '', 'error');
     return;
   }
 
@@ -83,7 +83,7 @@ function nextStep() {
 
    // Mostrar alerta si los campos requeridos no están completos
    if (!valid) {
-    alert('Por favor complete todos los campos requeridos');
+    swal('Por favor complete los campos requeridos', '', 'warning');
     return;
   }
 
@@ -120,13 +120,37 @@ prevButton.addEventListener("click", () => {
 
 
 // Agregar evento al botón de finalizar
-submitButton.addEventListener('click', (event) => {
+/* submitButton.addEventListener('click', (event) => {
   const confirmMsg = confirm('¿Está seguro que desea enviar la solicitud?');
   if (confirmMsg) {
-    alert('Gracias por su solicitud, lo esperamos pronto!');
+    swal('Gracias por su solicitud, lo esperamos pronto!', 'success');
     formSteps.reset();
   }
+}); */
+
+// Agregar evento al botón de finalizar
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault(); // prevenir que la página se recargue al hacer clic en el botón
+  swal({
+    title: "¿Está seguro que desea enviar la solicitud?",
+    text: "",
+    icon: "warning",
+    buttons: ["Cancelar", "Aceptar"],
+    dangerMode: true,
+  }).then((confirm) => {
+    if (confirm) {
+      swal({
+        title: "Gracias por su solicitud",
+        text: "Lo esperamos pronto!",
+        icon: "success",
+        button: "Aceptar"
+      }).then(() => {
+        formSteps.reset(); // reiniciar el formulario después de que el usuario haga clic en "Aceptar" en la alerta de SweetAlert
+      });
+    }
+  });
 });
+
 
 // Mostrar o ocultar botones de acuerdo al paso inicial
 prevButton.style.display = "none";
