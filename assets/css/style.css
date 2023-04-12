@@ -154,16 +154,23 @@ nav a:hover {
 .BotonPresupuesta{    
     text-decoration: none;
     color: var(--negro);
-    margin-left: 4px;
-    padding-left: 3rem;
-    font-size: 20px;
-    font-weight: 500;
+    margin-left: 0px;
+    padding: 0.8rem;    
+    font-size: 21px;
+    font-weight: 550;
     transition-property: color;
     transition-duration: 0.5s;
     align-self: flex-end; 
+    border: 1px solid var(--negro) ;
+    border-radius: 4px;
+    box-shadow:1px 1px 1px var(--br-shadows) 
 }
 .BotonPresupuesta:hover {
     color: var(--amarillo);
+    font-weight: 800;
+    background-color: whitesmoke;
+    box-shadow:2px -2px 5px var(--br-shadows);
+    border: 1px solid var(--negro);
 }
 /* Seccion Carousel */
 #carrusel{  
@@ -554,10 +561,11 @@ form input[type="submit"]:hover {
 footer { 
     width: 100%; 
     background-color: var(--bg-button);
-    padding: 2vh 5vw;
+    padding: 5vh 5vw;
     font-size: 18px;
     font-family:'Courier New', Courier, monospace;
     color: var(--blanco); 
+    
 }
 footer a {
     text-decoration: none;  
@@ -568,9 +576,20 @@ footer ul {
     margin: 0;
     padding-left: 0;
 }
+
+footer a:hover {
+    color: var(--amarillo);
+}
+
+
 footer li { 
     color: var(--blanco);
 }
+
+footer li:hover {
+    color: var(--amarillo);
+}
+
 footer p {
     color: var(--blanco);
 }
@@ -586,6 +605,7 @@ footer p {
 .sociales{
     display: flex;
     justify-content: space-between;
+    margin-top: 4.5vh;
 }
 
 @media (max-width: 1024px) {
