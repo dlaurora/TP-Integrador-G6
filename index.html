@@ -62,78 +62,81 @@
                     </div>
                 </div>
             </div>        
-            <form id="form-wizard">
-                <!-- Paso 1 -->
-                <div class="form-step">
-                    <h2> Alquilá tu bici.</h2>
-                    <p>Completando la siguiente información nos ayudará a seleccionar la mejor bici para tu experiencia.</p>
-                    <label for="bicicleta">Bicicleta:</label>
-                    <select id="bicicleta" name="bicicleta" required>
-                        <option value="">- Seleccioná una bici -</option>
-                        <option value="montaña">Bicicletas de montaña</option>
-                        <option value="urbana">Bicicletas urbanas</option>
-                        <option value="hibrida">Bicicletas eléctricas</option>
-                        <option value="chicos">Bicicletas infantiles</option>
-                    </select>
-                    <br>
-                    <label for="rodado">Rodado:</label>
-                    <select id="rodado" name="rodado" required>
-                        <option value="">- Seleccioná un rodado -</option>
-                        <option value="26">infantiles</option>
-                        <option value="26">16"</option>
-                        <option value="26">20"</option>
-                        <option value="26">24"</option>
-                        <option value="26">26"</option>
-                        <option value="27">27,5"</option>
-                        <option value="28">29"</option>
-                    </select>
-                    <br>
-                    <label for="edad">Edad:</label>
-                    <select id="edad" name="edad" required>
-                        <option value=""> - Seleccioná tu rango de edad -</option>
-                        <option value="nino">1-5 años (82/100cm)</option>
-                        <option value="adolescente">4-6 años (105/120cm)</option>
-                        <option value="adulto">6-8 años (115/130cm)</option>
-                        <option value="mayor">7-11 años (125/145cm)</option>
-                        <option value="mayor">10-14 años (140/165cm)</option>
-                        <option value="mayor">18+ años (165/185cm +)</option>
-                    </select>
-                    <br>
-                    <label for="precio">Valor pod día:</label>
-                    <span id="precio"></span>
-                </div>
-            
-                <!-- Paso 2 -->
-                <div class="form-step">
-                    <h2>Datos del Cliente</h2>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                </div>        
-                <!-- Paso 3 -->
-                <div class="form-step">
-                    <h2>Información adicional</h2>
-                    <label for="informacion">Información adicional:</label>
-                    <textarea id="informacion" name="informacion"></textarea>
-                    <span>Agregue aquí información adicional acerca de su pedido.</span>
-                </div>        
-                <!-- Botones -->
-                <div class="form-buttons">
-                    <button type="button" class="prev-button">Atrás</button>
-                    <button type="button" class="next-button">Siguiente</button>
-                    <button type="submit" class="submit-button">Finalizar</button>
-                </div>
-            </form>          
+            <div class="form-alquilar">
+                <form id="form-wizard">
+                    <!-- Paso 1 -->
+                    <div class="form-step">
+                        <h2> Alquilá tu bici.</h2>
+                        <p>Completando la siguiente información nos ayudará a seleccionar la mejor bici para tu experiencia.</p>
+                        <label for="bicicleta">Bicicleta:</label>
+                        <select id="bicicleta" name="bicicleta" required>
+                            <option value="">- Seleccioná una bici -</option>
+                            <option value="montaña">Bicicletas de montaña</option>
+                            <option value="urbana">Bicicletas urbanas</option>
+                            <option value="hibrida">Bicicletas eléctricas</option>
+                            <option value="chicos">Bicicletas infantiles</option>
+                        </select>
+                        <br>
+                        <label for="rodado">Rodado:</label>
+                        <select id="rodado" name="rodado" required>
+                            <option value="">- Seleccioná un rodado -</option>
+                            <option value="26">infantiles</option>
+                            <option value="26">16"</option>
+                            <option value="26">20"</option>
+                            <option value="26">24"</option>
+                            <option value="26">26"</option>
+                            <option value="27">27,5"</option>
+                            <option value="28">29"</option>
+                        </select>
+                        <br>
+                        <label for="edad">Edad:</label>
+                        <select id="edad" name="edad" required>
+                            <option value=""> - Seleccioná tu rango de edad -</option>
+                            <option value="nino">1-5 años (82/100cm)</option>
+                            <option value="adolescente">4-6 años (105/120cm)</option>
+                            <option value="adulto">6-8 años (115/130cm)</option>
+                            <option value="mayor">7-11 años (125/145cm)</option>
+                            <option value="mayor">10-14 años (140/165cm)</option>
+                            <option value="mayor">18+ años (165/185cm +)</option>
+                        </select>
+                        <br>
+                        <label for="precio">Valor por día:</label>
+                        <span id="precio"></span>
+                    </div>
+                
+                    <!-- Paso 2 -->
+                    <div class="form-step">
+                        <h2>Datos del Cliente</h2>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>        
+                    <!-- Paso 3 -->
+                    <div class="form-step">
+                        <h2>Información adicional</h2>
+                        <label for="informacion">Información adicional:</label>
+                        <textarea id="informacion" name="informacion"></textarea>
+                        <span>Agregue aquí información adicional acerca de su pedido.</span>
+                    </div>        
+                    <!-- Botones -->
+                    <div class="form-buttons">
+                        <button type="button" class="prev-button">Atrás</button>
+                        <button type="button" class="next-button">Siguiente</button>
+                        <button type="submit" class="submit-button">Finalizar</button>
+                    </div>
+                </form> 
+            </div>         
         </section>  
-        <section id="personal">
+        <section id="personal">            
+            <h2>Personal</h2>
             <div id="empleados">
                 
             </div>
@@ -143,10 +146,14 @@
                 <h1>Contáctanos</h1>
                 <p>Un asesor se pondra en contacto con vos para despejar todas tus dudas. </p>
                 <form action="#" method="post" id="formulario">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="text" name="Telefono" placeholder="Telefono">
-                    <input type="email" name="correo" placeholder="Correo electrónico">
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <label for="nombreContactanos">Ingrese su nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required id="nombreContactanos">
+                    <label for="telefonoContactanos">Ingrese su teléfono:</label>
+                    <input type="text" name="Telefono" placeholder="Telefono" id="telefonoContactanos">
+                    <label for="correoContactanos">Ingrese su correo electrónico:</label>
+                    <input type="email" name="correo" placeholder="Correo electrónico" id="correoContactanos">
+                    <label for="mensajeContactanos">Ingrese su consulta:</label>
+                    <textarea name="mensaje" placeholder="Mensaje" required id="mensajeContactanos"></textarea>
                     <input type="submit" value="Enviar">
                 </form>
             </div>

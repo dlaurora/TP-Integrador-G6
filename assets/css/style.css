@@ -77,18 +77,14 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
 }
-#carrusel{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
 #alquilar{
     height: 60vh;
     margin: 0 5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    margin-bottom: 8vh;    
 }
 /* sección Banner */
 .hero{
@@ -97,6 +93,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;    
     align-items: center;
+    margin-bottom: 8vh;
 }
 .banner{
     width: 100%;
@@ -112,7 +109,7 @@ nav a:hover {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-right: 2vw;
+    margin-right: 10vw;
 }
 .hero-img{
     margin-left: 5vw;
@@ -151,27 +148,27 @@ nav a:hover {
     color:var(--clr-2);
     text-align: right;
 }
-.BotonPresupuesta{
-    align-self: flex-end;
+.BotonPresupuesta{    
     text-decoration: none;
-    margin-left: 25vw;
-    margin-top: 1vw;
-    padding: 1vw;
-    font-size: 20px;
-    font-family: var(--font);
     color: var(--clr-2);
-    background-color: var(--clr-3);
-    border-radius: 4px;
+    margin-left: 4px;
+    padding-left: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    transition-property: color;
+    transition-duration: 0.5s;
+    align-self: flex-end; 
 }
 .BotonPresupuesta:hover {
-    background-color:var(--clr-1);  
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: var(--clr-3);
 }
 /* Seccion Carousel */
-#carrusel{
-    width: 100%;
+#carrusel{    
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
 }
 #carousel-container {
     position: relative;
@@ -212,7 +209,7 @@ nav a:hover {
     font-size: 20px;
     font-weight: bold;
     text-shadow: 1px 1px 2px #000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 5px 10px;
 }
 
@@ -225,7 +222,6 @@ nav a:hover {
     text-align: center;
     border-spacing: 10px;
 }
-
 
 #carousel-controls button {
     margin: 1px 125px ;
@@ -246,11 +242,15 @@ nav a:hover {
 
 /* Seccion form wizzard */
 /* Estilos generales del formulario */
+.form-alquilar{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
 #form-wizard {
     width: 100%;
-    max-width: 600px;
-    margin-left: 1vw;
-    margin-bottom: 50px;
+    /* max-width: 600px; */
+    margin-left: 2vw;    
     padding: 20px;
     background-color: rgba(131, 126, 126, 0.423);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -272,9 +272,7 @@ nav a:hover {
 }
 
 #form-step .h2{
- 
     margin-bottom: 10px;
-
 }
   
 @keyframes fade-in {
@@ -368,6 +366,10 @@ label[for="precio"] {
 }  
 
 /* Sección Personal */
+#personal h2{
+    text-align: center;
+    font-size: 2rem;
+}
 #empleados {
     display: flex;
     flex-wrap: wrap;
