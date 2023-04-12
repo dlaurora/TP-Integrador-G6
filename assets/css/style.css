@@ -7,7 +7,8 @@
     --clr-1: rgb(242,242,242);
     --clr-2: rgb(34, 40, 49);
     --clr-3: rgb(242, 158, 56);
-    --clr-4: rgba(131, 126, 126, 0.423);
+    --clr-4: rgba(211, 203, 203, 0.212);
+    --clr-shadow-cards: rgba(126, 126, 126, 0.3);
 }
 
 *{
@@ -394,9 +395,15 @@ label[for="precio"] {
 }  
 
 /* Sección Personal */
+#personal{
+    margin-top: 75px;
+    background-color: var(--clr-4);
+    border-radius: 15px;
+}
 #personal h2{
     text-align: center;
     font-size: 2rem;
+    padding-top: 15px;
 }
 #empleados {
     display: flex;
@@ -411,12 +418,12 @@ label[for="precio"] {
     width: 230px;
     height: 390px;
     padding: 20px;
-    background-color: rgb(238, 229, 229);
-    box-shadow: none;
+    background-color: var(--clr-1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 5px var(--clr-shadow-cards), 0 0 2px var(--clr-shadow-cards), 0 0 2px var(--clr-shadow-cards), 0 0 2px var(--clr-shadow-cards); */
+    border-radius: 10px;
 }
   
 .name{
@@ -429,7 +436,7 @@ label[for="precio"] {
   .job{
     height: 40px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     color: var(--clr-3);
     text-align: center;
@@ -449,6 +456,7 @@ label[for="precio"] {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 50%;
+    border: rgb(156, 156, 156) 2px solid;
   }
   
 /* Sección Contactenos */
