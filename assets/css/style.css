@@ -164,14 +164,14 @@ nav a:hover {
 /* Seccion Carousel */
 #carrusel{    
     display: flex;
-    margin-top: 3vh;
+    margin-top: 1vh;
     width: 50%;
     height: 100%;
 }
 #carousel-container {    
     position: relative;
     border-radius: 10px;
-    width: 100%;
+    width: 120%;
     height: 100%;
     overflow: hidden;
     margin: 0;
@@ -251,11 +251,30 @@ nav a:hover {
     /* max-width: 600px; */
     margin-left: 2vw;    
     padding: 20px;
-    background-color: rgba(131, 126, 126, 0.423);
+    background-color: rgba(211, 203, 203, 0.212);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    font-size: 18px;
 }
-  
+
+.form-step #valor {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--clr-3);
+    font-weight: bold;
+  }
+
+.form-step #precio {
+    color: var(--clr-3);
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
 /* Estilos de los pasos */
 .form-step:not(:first-of-type) {
     display: none;
@@ -429,7 +448,7 @@ label[for="precio"] {
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: rgba(131, 126, 126, 0.423);
+    background-color: rgba(211, 203, 203, 0.212);
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
