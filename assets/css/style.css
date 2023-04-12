@@ -8,7 +8,10 @@
     --negro: rgb(34, 40, 49);
     --amarillo: rgb(242, 158, 56);
     --bg-section: rgba(211, 203, 203, 0.212);
-    --clr-shadow-cards: rgba(126, 126, 126, 0.3);
+    --bg-button: rgb(51, 51, 51);
+    --br-shadows: rgba(49, 49, 49, 0.3);
+    --br-input: rgb(204, 204, 204);
+    
 }
 
 *{
@@ -35,7 +38,7 @@ header {
     width: 100%;
     background-color: var(--blanco);
     height: 66px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--br-shadows);
 }
 header img {
     margin-left: 5vw;
@@ -89,7 +92,7 @@ nav a:hover {
 /* sección Banner */
 .hero{
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: var(--blanco);
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -131,13 +134,13 @@ nav a:hover {
     font-family: 'Mitr';
     color: var(--negro);
     text-align: right;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px var(--br-shadows);
 }
 .h1Naranja{
     font-family: var(--font);
     color: var(--amarillo);
     font-size: 93px;    
-    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 1px 2px var(--br-shadows);
 }
 .hero .hero-title p{
     font-size: 21px;
@@ -176,7 +179,7 @@ nav a:hover {
     height: 100%;
     overflow: hidden;
     margin: 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px var(--br-shadows);
 }
 #carousel-images {
     position: relative;
@@ -199,7 +202,7 @@ nav a:hover {
     z-index: 2;
 }
 .titulo-carrusel h2{
-    background-color: #F2F2F2;
+    background-color: var(--blanco);
     margin-top: 19px;
     font-size: 24px;
 }
@@ -213,12 +216,13 @@ nav a:hover {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
+    color: var(--blanco);
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px #000;
-    background-color: rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px var(--br-shadows);
+    background-color: var(--bg-button);
     padding: 5px 10px;
+    border-radius: 10px;
 }
 
 #carousel-controls {
@@ -235,18 +239,18 @@ nav a:hover {
 #carousel-controls button {
     margin: 1px 125px ;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--bg-button);
+    color: var(--blanco);
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    box-shadow: 2px 2px 5px var(--br-shadows); 
 }
 
 #carousel-controls button:hover {
-    background-color: #ec7a00;
+    background-color: var(--amarillo);
 }
 
 /* Seccion form wizzard */
@@ -261,8 +265,8 @@ nav a:hover {
     height: auto;    
     margin-left: 2vw;    
     padding: 20px;
-    background-color: rgba(211, 203, 203, 0.212);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg-section);
+    box-shadow: 2px 2px 5px var(--br-shadows);
     border-radius: 10px;
     font-size: 18px;
 }
@@ -323,6 +327,16 @@ nav a:hover {
 }
   
 /* Estilos de los campos de entrada y selección */
+.form-step input:focus {
+    border-bottom: 2px solid var(--negro);
+    outline: none;
+}
+
+.form-step textarea:focus {
+    border-bottom: 2px solid var(--negro);
+    outline: none;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -335,7 +349,7 @@ textarea {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--br-input);
     font-size: 16px;
 }
   
@@ -350,8 +364,8 @@ textarea {
 .prev-button,
 .next-button,
 .submit-button {
-    background-color: #333;
-    color: #ffffff;
+    background-color: var(--bg-button);
+    color: var(--blanco);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -363,7 +377,7 @@ textarea {
 .prev-button:hover,
 .next-button:hover,
 .submit-button:hover {
-    background-color: #ec7a00;
+    background-color: var(--amarillo);
 }
   
 /* Transición entre los pasos */
@@ -384,12 +398,12 @@ textarea {
 }
 
 label[for="precio"] {
-    color: rgb(0, 0, 0);
+    color: var(--negro);
     font-weight: bold;
 }
   
 #precio {
-    color: rgb(0, 0, 0);
+    color: var(--negro);
     font-weight: bold;
     font-size: 20px;
 }  
@@ -400,7 +414,7 @@ label[for="precio"] {
     background-color: var(--bg-section);
     border-radius: 10px;
     padding: 2rem 2rem;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px var(--br-shadows);
 }
 #personal h2{
     text-align: center;
@@ -425,7 +439,6 @@ label[for="precio"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* box-shadow: 0 0 5px var(--clr-shadow-cards), 0 0 2px var(--clr-shadow-cards), 0 0 2px var(--clr-shadow-cards), 0 0 2px var(--clr-shadow-cards); */
     border-radius: 10px;
 }
   
@@ -436,31 +449,31 @@ label[for="precio"] {
     font-weight: 700;
 }
     
-  .job{
+.job{
     height: 40px;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     color: var(--amarillo);
     text-align: center;
-  }
+}
     
-  .description{
+.description{
     color: var(--negro);
     text-align: center;
-  }
+}
   
-  .card p{
+.card p{
     height: 70px;
     margin-top: 0;
-  }
+}
     
-  .card img{
+.card img{
     width: 100%;
     margin-bottom: 15px;
     border-radius: 50%;
-    border: rgb(156, 156, 156) 2px solid;
-  }
+    border: 2px solid var(--br-input);
+}
   
 /* Sección Contactenos */
 .formulario {
@@ -469,9 +482,9 @@ label[for="precio"] {
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: rgba(211, 203, 203, 0.212);
+    background-color: var(--bg-section);
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px var(--br-shadows);
 }
 
 h1 {
@@ -497,24 +510,33 @@ form textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 form input[type="submit"] {
     margin-left: 35%;
     margin-top: 30px;
     width: 30%;
-    background-color:#333;
-    color: whitesmoke;
+    background-color: var(--bg-button);
+    color: var(--blanco);
     cursor: pointer;
     border: none;
 }
 
 form input[type="submit"]:hover {
-    background-color: #ec7a00;
+    background-color: var(--amarillo);
     transition: all 0.3s ease-in-out
 }
 
+.formulario input:focus {
+    border-bottom: 2px solid var(--negro);
+    outline: none;
+}
+
+.formulario textarea:focus{
+    border-bottom: 2px solid var(--negro);
+    outline: none;
+}
 /* Estilos para la ventana emergente */
 #popup {
     display: none;
@@ -523,23 +545,23 @@ form input[type="submit"]:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: var(--blanco);
+    border: 1px solid var(--br-input);
     text-align: center;
 }
 
 /* sección footer */
 footer { 
     width: 100%; 
-    background-color: rgb(56, 54, 54) ;
+    background-color: var(--bg-button);
     padding: 2vh 5vw;
     font-size: 18px;
     font-family:'Courier New', Courier, monospace;
-    color: rgb(204, 198, 198); 
+    color: var(--blanco); 
 }
 footer a {
     text-decoration: none;  
-    color: rgb(192, 190, 190);  
+    color: var(--blanco);  
 }
 footer ul {
     list-style: none;
@@ -547,10 +569,10 @@ footer ul {
     padding-left: 0;
 }
 footer li { 
-    color: rgb(192, 190, 190);
+    color: var(--blanco);
 }
 footer p {
-    color: rgb(192, 190, 190);
+    color: var(--blanco);
 }
 .row {
     width: 100%;    
