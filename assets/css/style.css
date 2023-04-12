@@ -4,10 +4,10 @@
 
 :root {
     --font: 'League Spartan', sans-serif;
-    --clr-1: rgb(242,242,242);
-    --clr-2: rgb(34, 40, 49);
-    --clr-3: rgb(242, 158, 56);
-    --clr-4: rgba(211, 203, 203, 0.212);
+    --blanco: rgb(242,242,242);
+    --negro: rgb(34, 40, 49);
+    --amarillo: rgb(242, 158, 56);
+    --bg-section: rgba(211, 203, 203, 0.212);
     --clr-shadow-cards: rgba(126, 126, 126, 0.3);
 }
 
@@ -19,7 +19,7 @@
 }
 
 body{
-    background-color: var(--clr-1);
+    background-color: var(--blanco);
     height: 100%;       
 }
 
@@ -33,7 +33,7 @@ header {
     margin-right: 5vw;
     padding: 50px 0;
     width: 100%;
-    background-color: var(--clr-1);
+    background-color: var(--blanco);
     height: 66px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -60,7 +60,7 @@ header nav ul li{
 }
 nav a {    
     text-decoration: none;
-    color: var(--clr-2);
+    color: var(--negro);
     margin-left: 4px;
     padding-left: 3rem;
     font-size: 20px;
@@ -70,7 +70,7 @@ nav a {
     align-self: flex-end;    
 }
 nav a:hover {
-    color: var(--clr-3);  
+    color: var(--amarillo);  
 }
 
 #empresa{
@@ -118,7 +118,7 @@ nav a:hover {
 }
 .sombra{
     float:left;
-    background-color: var(--clr-3);
+    background-color: var(--amarillo);
     margin: 10px 0 0 5px;
 }
 .hero-img img {
@@ -129,13 +129,13 @@ nav a:hover {
 .hero .hero-title h1{
     font-size: 62px;    
     font-family: 'Mitr';
-    color: var(--clr-2);
+    color: var(--negro);
     text-align: right;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 .h1Naranja{
     font-family: var(--font);
-    color: var(--clr-3);
+    color: var(--amarillo);
     font-size: 93px;    
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -145,12 +145,12 @@ nav a:hover {
     margin-top: 0vw;  
     margin-bottom: 0vw;
     padding-left: 0vw;
-    color:var(--clr-2);
+    color:var(--negro);
     text-align: right;
 }
 .BotonPresupuesta{    
     text-decoration: none;
-    color: var(--clr-2);
+    color: var(--negro);
     margin-left: 4px;
     padding-left: 3rem;
     font-size: 20px;
@@ -160,11 +160,11 @@ nav a:hover {
     align-self: flex-end; 
 }
 .BotonPresupuesta:hover {
-    color: var(--clr-3);
+    color: var(--amarillo);
 }
 /* Seccion Carousel */
 #carrusel{  
-    background-color: #ffffff;  
+    background-color: var(--bg-section);  
     display: flex;    
     width: 50%;
     height: 100%;
@@ -271,12 +271,12 @@ nav a:hover {
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
-    color: var(--clr-3);
+    color: var(--amarillo);
     font-weight: bold;
   }
 
 .form-step #precio {
-    color: var(--clr-3);
+    color: var(--amarillo);
     display: inline-block;
     padding-bottom: 5px;
     padding-left: 2px;
@@ -396,29 +396,32 @@ label[for="precio"] {
 
 /* Sección Personal */
 #personal{
-    margin-top: 75px;
-    background-color: var(--clr-4);
-    border-radius: 15px;
+    margin: 0 5vw;    
+    background-color: var(--bg-section);
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 #personal h2{
     text-align: center;
     font-size: 2rem;
-    padding-top: 15px;
+    margin-bottom: 4vh; 
 }
 #empleados {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 3vh 5vw;    
+    justify-content: center;
+    width: 100%;    
     background-color: transparent;
+    align-items: center;
+    gap: 2rem;
 }
     
 .card{
     width: 230px;
     height: 390px;
     padding: 20px;
-    background-color: var(--clr-1);
+    background-color: var(--blanco);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,7 +430,7 @@ label[for="precio"] {
 }
   
 .name{
-    color: var(--clr-2);
+    color: var(--negro);
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: 700;
@@ -438,12 +441,12 @@ label[for="precio"] {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    color: var(--clr-3);
+    color: var(--amarillo);
     text-align: center;
   }
     
   .description{
-    color: var(--clr-2);
+    color: var(--negro);
     text-align: center;
   }
   

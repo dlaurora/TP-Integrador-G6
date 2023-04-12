@@ -5,7 +5,7 @@
         "modelo": "Bicicleta montaña",
         "rodado": 29,
         "precio": "15 USD",
-        "imagen": "./assets/images/bicis/VenzoFrida.jpg"
+        "imagen": "./assets/images/bicis/VenzoFrida.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "modelo": "Bicicleta montaña",
         "rodado": 29,
         "precio": "15 USD",
-        "imagen": "./assets/images/bicis/VolkswagenHighkube.jpg"
+        "imagen": "./assets/images/bicis/VolkswagenHighkube.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "modelo": "Bicicleta montaña",
         "rodado": 29,
         "precio": "15 USD",
-        "imagen": "./assets/images/bicis/BenelliRaceKing.jpg"
+        "imagen": "./assets/images/bicis/BenelliRaceKing.png"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "modelo": "Bicicleta urbana",
         "rodado": 16,
         "precio": "10 USD",
-        "imagen": "./assets/images/bicis/1_Plegable.jpg"
+        "imagen": "./assets/images/bicis/1_Plegable.png"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "modelo": "Bicicleta hibrida",
         "rodado": 21,
         "precio": "20 USD",
-        "imagen": "./assets/images/bicis/hibrida.jpg"
+        "imagen": "./assets/images/bicis/hibrida.png"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "modelo": "Bicicleta infantiles",
         "rodado": "infantil",
         "precio": "10 USD",
-        "imagen": "./assets/images/bicis/niños.jpg"
+        "imagen": "./assets/images/bicis/niños.png"
     }    
 
 ]
