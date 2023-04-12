@@ -162,7 +162,8 @@ nav a:hover {
     color: var(--clr-3);
 }
 /* Seccion Carousel */
-#carrusel{    
+#carrusel{  
+    background-color: #ffffff;  
     display: flex;    
     width: 50%;
     height: 100%;
@@ -170,13 +171,12 @@ nav a:hover {
 #carousel-container {    
     position: relative;
     border-radius: 10px;
-    width: 120%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 #carousel-images {
     position: relative;
     /* padding: 20px; */
@@ -189,14 +189,24 @@ nav a:hover {
     transition: transform 0.5s ease;
     animation: carouselAnimation 10s infinite linear;
 }
-
+.titulo-carrusel{    
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.titulo-carrusel h2{
+    background-color: #F2F2F2;
+    margin-top: 19px;
+    font-size: 24px;
+}
 #carousel-images img {
     width: 100%;
-    height: 100%;
+    height: 29rem;
     object-fit: contain;
 }
-
-
 #carousel-images .caption {
     position: absolute;
     bottom: 10px;
@@ -218,6 +228,7 @@ nav a:hover {
     width: 100%;
     text-align: center;
     border-spacing: 10px;
+    margin-bottom: .8rem;
 }
 
 #carousel-controls button {
@@ -242,12 +253,11 @@ nav a:hover {
 .form-alquilar{
     display: flex;
     width: 50%;
-    height: 100%;
+    height: 29rem;
 }
 #form-wizard {
     width: 100%;
-    height: auto;
-    /* max-width: 600px; */
+    height: auto;    
     margin-left: 2vw;    
     padding: 20px;
     background-color: rgba(211, 203, 203, 0.212);
@@ -333,6 +343,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 1rem;
 }
   
 .prev-button,
@@ -570,8 +581,8 @@ footer p {
         margin-bottom: 20px;
     }
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     #carousel-container {
         height: 400px;
     }
-}
+} */
