@@ -145,7 +145,13 @@ submitButton.addEventListener('click', (event) => {
         icon: "success",
         button: "Aceptar"
       }).then(() => {
-        formSteps.reset(); // reiniciar el formulario después de que el usuario haga clic en "Aceptar" en la alerta de SweetAlert
+        /* formSteps.reset(); // reiniciar el formulario después de que el usuario haga clic en "Aceptar" en la alerta de SweetAlert */
+        var formElements = document.getElementById("form-wizard").elements;
+        for (var i = 0; i < formElements.length; i++) {
+          if (formElements[i].type !== "submit") {
+            formElements[i].value = "";
+          }
+        }
       });
     }
   });
