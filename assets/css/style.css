@@ -42,7 +42,7 @@ header {
 }
 header img {
     margin-left: 5vw;
-    width:170px;
+    width:220px;
     padding-bottom: 10px;
     padding-top: 5px;
 }
@@ -380,7 +380,16 @@ textarea {
     border: none;
     font-size: 18px;
 }
-  
+
+.next-button, .submit-button {
+    margin-left: 40%;
+    margin-top: -10px;
+  }
+
+.next-button{
+    justify-content: center;
+}
+
 .prev-button:hover,
 .next-button:hover,
 .submit-button:hover {

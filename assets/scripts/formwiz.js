@@ -120,7 +120,7 @@ prevButton.addEventListener("click", () => {
 
 
 // Agregar evento al botón de finalizar
-/* submitButton.addEventListener('click', (event) => {
+/*  submitButton.addEventListener('click', (event) => {
   const confirmMsg = confirm('¿Está seguro que desea enviar la solicitud?');
   if (confirmMsg) {
     swal('Gracias por su solicitud, lo esperamos pronto!', 'success');
